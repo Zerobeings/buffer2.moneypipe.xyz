@@ -38,7 +38,7 @@ var web3 = new Web3(window.ethereum);
 var template = Handlebars.compile(document.querySelector("#template").innerHTML)
 var buffer = new Moneypipe.buffer2({
   web3: web3,
-  network: Constants.net,
+  network: "sepolia",
   chainId: Constants.chainId,
 })
 var chart;
