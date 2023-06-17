@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         let cid = await buffer.cid(addr)
         g.push(addr)
         let a = document.createElement("a")
-        a.setAttribute("href", "group.html#address=" + addr)
+        a.setAttribute("href", "sepolia/group.html#address=" + addr)
         a.innerHTML = `${addr} <b id="_${addr}"></b>`
         document.querySelector(".items").appendChild(a)
       } catch (e) {
