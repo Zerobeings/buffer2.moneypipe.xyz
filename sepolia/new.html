@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       let { tx, address } = await buffer.create({ index: limit, title, members })
       console.log("tx", tx)
-      location.href = "group#address=" + address
+      location.href = "group.html/#address=" + address
     } catch (e) {
       alert(e.message)
     }
